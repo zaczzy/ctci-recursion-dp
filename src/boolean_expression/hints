@@ -1,0 +1,9 @@
+Omitting this question to come back later.
+
+Basic idea is to use T[i, j] to represent numWays to parenthesize between i and j to get True;
+F[i, j] to represent numWays to parenthesis between i and j to get False.
+
+Total[i, j] = T[i, j] + F[i, j];
+
+Recursion of F[i, j] and T[i, j] involves picking operator k between i and j and the type of operator k is: 
+& , | , ^(XOR)
